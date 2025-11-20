@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang - RICKY</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+  <nav class="navbar">
+    <h1>RICKY SYAHDEWA</h1>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Beranda</a>
+      <a href="about.html">Tentang</a>
+      <a href="materi.html">Materi</a>
+      <a href="kontak.html">Kontak</a>
+    </div>
+    <div class="burger" onclick="toggleMenu()">☰</div>
+  </nav>
+</header>
+
+<aside class="sidebar" id="sidebar">
+    <a href="index.html" onclick="toggleMenu()">Home</a>
+    <a href="about.html" onclick="toggleMenu()">About</a>
+    <a href="materi.html" onclick="toggleMenu()">Materi</a>
+    <a href="kontak.html" onclick="toggleMenu()">Kontak</a>
+  </aside>
+
+
+  <section class="content">
+    <h2>TENTANG SAYA</h2>
+    <p>Halo, saya adalah seorang MAHASISWA yang tertarik di bidang matematika.</p>
+    <img src="poki.jpg" alt="Foto Profil" class="foto">
+    <p>Saya adalah mahasiswa dari universitas islam negeri sumatra utara , dan saya sekarang sedang belajar menambah ilmu
+    pendidikan matematika saya di kampus tercinta saya TERIMA KASIH.</p>
+  </section>
+
+   <script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+</script>
+
+<script src="script.js"></script>
+
+  <footer>
+    <p>© 2025 RICKY SYAHDEWA.</p>
+  </footer>
+</body>
+</html>

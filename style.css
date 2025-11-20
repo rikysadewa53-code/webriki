@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #5F9EA0;
+  padding: 10px 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.burger {
+  display: none;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 200px;
+  height: 100%;
+  background: #444;
+  padding: 20px;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar a:hover {
+  color: #f0a500;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('mm.jpg');
+  color: #f8f5f5;
+}
+
+header {
+  background: #5F9EA0;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero  {
+    position: relative;
+    
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    color: rgb(2, 2, 2);
+    border-radius: 10px;
+}
+
+.content {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 8px;
+  color: black;
+}
+
+.foto {
+  width: 200px;
+  display: block;
+  margin: 1rem auto;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.testimoni, .quote, .sosial, .galeri {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimoni .card, .quote blockquote {
+  font-style: italic;
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.ngl {
+  margin-top: 40px;
+  padding: 20px;
+  background-color:#222;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.ngl button {
+  background-color: #5F9EA0;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* RESPONSIVE untuk HP */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #5F9EA0;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    padding: 10px;
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+}

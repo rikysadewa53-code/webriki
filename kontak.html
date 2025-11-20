@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <link rel=" icon" href="%PUBLIK URL%/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - RICKY</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+  <nav class="navbar">
+    <h1>RICKY SYAHDEWA</h1>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Beranda</a>
+      <a href="about.html">Tentang</a>
+      <a href="materi.html">Materi</a>
+      <a href="kontak.html">Kontak</a>
+    </div>
+    <div class="burger" onclick="toggleMenu()">☰</div>
+  </nav>
+</header>
+
+<aside class="sidebar" id="sidebar">
+    <a href="index.html" onclick="toggleMenu()">Home</a>
+    <a href="about.html" onclick="toggleMenu()">About</a>
+    <a href="materi.html" onclick="toggleMenu()">Materi</a>
+    <a href="kontak.html" onclick="toggleMenu()">Kontak</a>
+  </aside>
+
+
+  <section class="content">
+    <h2>HUBUNGI SAYA</h2>
+    <p>Email:rikysadewa53@gmail.com</p>
+    <p>Instagram: <a href="https://www.instagram.com/ricky.sdwa?igsh=ZnRydnQ5dmV6d2R2" target="_blank">@ricky.sdwa</a></p>   
+    <p>Facebook: <a href="https://www.facebook.com/share/1BdaYJBLx5/" target="_blank">@ricky syahdewa</a></p>
+  </section>
+
+   <script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+</script>
+
+  <footer>
+    <p>© 2025 RICKY SYAHDEWA.</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
